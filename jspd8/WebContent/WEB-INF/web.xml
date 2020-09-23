@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	<display-name>jspd8</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>IndexPublicController</servlet-name>
+		<servlet-class>controllers.IndexPublicController</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>IndexPublicController</servlet-name>
+		<url-pattern>/trang-chu</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>IndexCatPublicController</servlet-name>
+		<servlet-class>controllers.IndexCatPublicController</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>IndexCatPublicController</servlet-name>
+		<url-pattern>/danh-muc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddCatController</servlet-name>
+		<servlet-class>controllers.AddCatController</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>AddCatController</servlet-name>
+		<url-pattern>/them-danh-muc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddNewsController</servlet-name>
+		<servlet-class>controllers.AddNewsController</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>AddNewsController</servlet-name>
+		<url-pattern>/them-tin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditCatController</servlet-name>
+		<servlet-class>controllers.EditCatController</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>EditCatController</servlet-name>
+		<url-pattern>/sua-danh-muc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditNewsController</servlet-name>
+		<servlet-class>controllers.EditNewsController</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>EditNewsController</servlet-name>
+		<url-pattern>/sua-tin-tuc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelCatController</servlet-name>
+		<servlet-class>controllers.DelCatController</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>DelCatController</servlet-name>
+		<url-pattern>/xoa-danh-muc</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DelNewsController</servlet-name>
+		<servlet-class>controllers.DelNewsController</servlet-class>
+	</servlet>
+		
+	<servlet-mapping>
+		<servlet-name>DelNewsController</servlet-name>
+		<url-pattern>/xoa-tin-tuc</url-pattern>
+	</servlet-mapping>
+</web-app>
